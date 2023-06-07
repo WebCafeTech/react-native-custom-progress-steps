@@ -33,8 +33,8 @@ class StepIcon extends Component {
         leftBar: {
           position: 'absolute',
           top: 40 / 2.22,
-          left: 0,
-          right: 40 + 8,
+          left: 20,
+          right: 44 + 8,
           borderTopStyle: this.props.borderStyle,
           borderTopWidth: this.props.borderWidth,
           borderTopColor: this.props.completedProgressBarColor,
@@ -43,11 +43,11 @@ class StepIcon extends Component {
         rightBar: {
           position: 'absolute',
           top: 40 / 2.22,
-          right: 0,
-          left: 40 + 8,
+          right: 15,
+          left: 44 + 8,
           borderTopStyle: this.props.borderStyle,
           borderTopWidth: this.props.borderWidth,
-          borderTopColor: this.props.progressBarColor,
+          borderTopColor: this.props.completedProgressBarColor,
           marginLeft: 40 / 2 + 2,
         },
         stepNum: {
@@ -79,8 +79,8 @@ class StepIcon extends Component {
         leftBar: {
           position: 'absolute',
           top: 36 / 2,
-          left: 0,
-          right: 36 + 8,
+          left: 10,
+          right: 42 + 8,
           borderTopStyle: this.props.borderStyle,
           borderTopWidth: this.props.borderWidth,
           borderTopColor: this.props.completedProgressBarColor,
@@ -89,8 +89,8 @@ class StepIcon extends Component {
         rightBar: {
           position: 'absolute',
           top: 36 / 2,
-          right: 0,
-          left: 36 + 8,
+          right: 12,
+          left: 42 + 8,
           borderTopStyle: this.props.borderStyle,
           borderTopWidth: this.props.borderWidth,
           borderTopColor: this.props.completedProgressBarColor,
@@ -125,8 +125,8 @@ class StepIcon extends Component {
         leftBar: {
           position: 'absolute',
           top: 36 / 2,
-          left: 0,
-          right: 36 + 8,
+          left: 20,
+          right: 40 + 8,
           borderTopStyle: this.props.borderStyle,
           borderTopWidth: this.props.borderWidth,
           borderTopColor: this.props.progressBarColor,
@@ -135,8 +135,8 @@ class StepIcon extends Component {
         rightBar: {
           position: 'absolute',
           top: 36 / 2,
-          right: 0,
-          left: 36 + 8,
+          right: 10,
+          left: 40 + 8,
           borderTopStyle: this.props.borderStyle,
           borderTopWidth: this.props.borderWidth,
           borderTopColor: this.props.progressBarColor,
@@ -153,9 +153,9 @@ class StepIcon extends Component {
         <View style={styles.circleStyle}>
           <Text style={styles.circleText}>
             {this.props.isCompletedStep ? (
-              <Text style={{ color: this.props.completedCheckColor }}>&#10003;</Text>
+              <Text style={{ color: this.props.completedCheckColor }}>{this.props.disableTickIcon ? this.props.stepLabel? this.props.stepLabel : this.props.stepNum : '✓' }</Text>
             ) : (
-              <Text style={styles.stepNum}>{this.props.stepNum}</Text>
+              <Text style={styles.stepNum}>{this.props.stepLabel ? this.props.stepLabel : this.props.stepNum}</Text>
             )}
           </Text>
         </View>
@@ -196,6 +196,8 @@ StepIcon.propTypes = {
   disabledStepNumColor: PropTypes.string,
 
   completedCheckColor: PropTypes.string,
+
+  disableTickIcon: PropTypes.bool
 };
 
 StepIcon.defaultProps = {
@@ -220,6 +222,8 @@ StepIcon.defaultProps = {
   disabledStepNumColor: 'white',
 
   completedCheckColor: 'white',
+
+  disableTickIcon: false,
 };
 
 export default StepIcon;

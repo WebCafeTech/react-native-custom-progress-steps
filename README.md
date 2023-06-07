@@ -2,16 +2,16 @@
 ![](https://img.shields.io/npm/dt/react-native-progress-steps.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-# react-native-progress-steps
+# react-native-custom-progress-steps
 
 A simple and fully customizable React Native component that implements a progress stepper UI. 
 * Each steps content is displayed inside of a customizable ScrollView. 
 * Fully customizable buttons are displayed at the bottom of the component to move between steps.
 
 
-Example One             |  Example Two
-:-------------------------:|:-------------------------:
-![](assets/react-native-progress-steps_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-progress-steps_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)
+Example One             |  Example Two             | Example Three
+:-------------------------:|:-------------------------:|:-------------------------:|
+![](assets/react-native-progress-steps_1.gif) [examples/ExampleOne.js](examples/ExampleOne.js)| ![](assets/react-native-progress-steps_2.gif) [examples/ExampleTwo.js](examples/ExampleTwo.js)| ![](assets/react-native-progress-steps_3.gif) [examples/ExampleThree.js](examples/ExampleThree.js)
 
 
 ## Installation
@@ -19,13 +19,13 @@ Example One             |  Example Two
 If using yarn:
 
 ```
-yarn add react-native-progress-steps
+yarn add react-native-custom-progress-steps
 ```
 
 If using npm:
 
 ```
-npm i react-native-progress-steps
+npm i react-native-custom-progress-steps
 ```
 
 ## Usage
