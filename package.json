@@ -1,5 +1,5 @@
 {
-  "name": "react-native-progress-steps",
+  "name": "react-native-custom-progress-steps",
   "version": "1.3.4",
   "description": "A simple and fully customizable React Native component that implements a progress stepper UI.",
   "main": "index.js",
