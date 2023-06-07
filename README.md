@@ -1,5 +1,5 @@
-![](https://img.shields.io/npm/v/react-native-progress-steps.svg?style=flat)
-![](https://img.shields.io/npm/dt/react-native-progress-steps.svg)
+![](https://img.shields.io/npm/v/react-native-custom-progress-steps.svg?style=flat)
+![](https://img.shields.io/npm/dt/react-native-custom-progress-steps.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 # react-native-custom-progress-steps
